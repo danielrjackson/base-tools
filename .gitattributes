@@ -1,0 +1,6 @@
+.gitattributes text eol=crlf
+src/basetools/__init__.py text eol=crlf
+src/basetools/d_paths.py text eol=crlf
+tests/test_native_project_paths.py text eol=crlf
+docs/NATIVE_PATHS.md text eol=crlf
+docs/migration/** text eol=lf

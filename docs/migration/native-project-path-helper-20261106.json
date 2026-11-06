@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "timestamp_utc": "2026-11-06T18:35:04.145290+00:00",
+  "scope": "Only the preserved standard-library project-path helper and empty package initializer",
+  "base_commit": "3ea5c0960ec1d2190fd86a524c1a6d6da00e3ea8",
+  "source_lineage": [
+    {
+      "path": "src/basetools/__init__.py",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "native_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_eol": "LF",
+      "original_trailing_whitespace": {},
+      "original_bytes_reconstructed_and_verified": true,
+      "runtime_ast_unchanged_excluding_docstrings": true
+    },
+    {
+      "path": "src/basetools/d_paths.py",
+      "original_sha256": "81c1167925749ae12728ad301c60e364a3551719334d9894498fa7150c17dfa4",
+      "native_sha256": "360a5d14b02bfd2331b13be687bd36e65933f2a58621e108550e6d72ee3efe60",
+      "original_eol": "CRLF",
+      "original_trailing_whitespace": {
+        "21": "    ",
+        "23": "    ",
+        "29": "    ",
+        "33": "        ",
+        "40": "        ",
+        "44": "        ",
+        "48": "        ",
+        "50": "        ",
+        "56": "        ",
+        "62": "            ",
+        "65": "        ",
+        "68": "    ",
+        "72": "        ",
+        "77": "    "
+      },
+      "original_bytes_reconstructed_and_verified": true,
+      "runtime_ast_unchanged_excluding_docstrings": true,
+      "presentation_edits": [
+        {
+          "before": "Path Management Utilities\n",
+          "after": "Path Management Utilities.\n"
+        },
+        {
+          "before": "__all__ = [\"BaseProjectPaths\"]\n\nclass BaseProjectPaths:",
+          "after": "__all__ = [\"BaseProjectPaths\"]\n\n\nclass BaseProjectPaths:"
+        },
+        {
+          "before": "        self.project_root = self._discover_project_root() if project_root is None else Path(project_root)\n",
+          "after": "        self.project_root = (\n            self._discover_project_root() if project_root is None else Path(project_root)\n        )\n"
+        },
+        {
+          "before": "        \"\"\"String representation of the project paths.\"\"\"",
+          "after": "        \"\"\"Return a string representation of the project paths.\"\"\""
+        }
+      ]
+    }
+  ],
+  "native_baseline": {
+    "passed": 8,
+    "exit": 0,
+    "log": "D:/code/migration-native-base-paths-before-20261106.log"
+  },
+  "changes": "Native CRLF, reversible presentation and trailing-whitespace cleanup only; runtime AST unchanged excluding docstrings",
+  "test_environment": "Existing native CPython/pytest environment from task-automation; no dependency installation",
+  "not_adopted": [
+    "other base-tools source drafts",
+    "unqualified package/dependency metadata",
+    "nineteen syntax-invalid Python drafts"
+  ],
+  "limitations": [
+    "This is a source/helper qualification, not a complete package build or installation",
+    "No original WSL source or protected asset was inspected or modified"
+  ],
+  "research_or_rust_started": false,
+  "denied_operations_retried": false
+}
